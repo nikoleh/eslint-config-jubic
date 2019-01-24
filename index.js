@@ -16,13 +16,20 @@ module.exports = {
     'import',
     'node',
     'promise',
-    'standard'
+    'standard',
+    'react'
   ],
 
   'globals': {
     'document': false,
     'navigator': false,
     'window': false
+  },
+
+  'settings': {
+    'react': {
+      'version': '16.0'
+    }
   },
 
   'rules': {
@@ -200,6 +207,29 @@ module.exports = {
     'standard/array-bracket-even-spacing': ['error', 'either'],
     'standard/computed-property-even-spacing': ['error', 'even'],
     'standard/no-callback-literal': 'error',
-    'standard/object-curly-even-spacing': ['error', 'either']
+    'standard/object-curly-even-spacing': ['error', 'either'],
+
+    'jsx-quotes': ['error', 'prefer-single'],
+    'react/jsx-boolean-value': 'error',
+    'react/jsx-curly-spacing': ['error', 'never'],
+    'react/jsx-equals-spacing': ['error', 'never'],
+    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-no-duplicate-props': 'error',
+    'react/jsx-no-undef': 'error',
+    'react/jsx-tag-spacing': ['error', { 'beforeSelfClosing': 'always' }],
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/self-closing-comp': 'error',
+    'react/jsx-no-bind': ['error', {
+      'allowArrowFunctions': true,
+      'allowBind': false,
+      'ignoreRefs': true
+    }],
+    'react/no-did-update-set-state': 'error',
+    'react/no-unknown-property': 'error',
+    'react/no-unused-prop-types': 'error',
+    'react/prop-types': 'error',
+    'react/react-in-jsx-scope': 'error'
   }
 }
